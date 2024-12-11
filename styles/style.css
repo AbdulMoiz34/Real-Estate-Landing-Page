@@ -145,5 +145,7 @@ header a {
 
     .hero-section div {
         width: 100%;
+    }.hero-sec-inp button{
+        width: auto !important;
     }
 }
