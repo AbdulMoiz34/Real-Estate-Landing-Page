@@ -1,0 +1,149 @@
+/* Prevent by-default styling of css */
+@import url("./variables.css");
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../assets/fonts/Poppins-Bold.ttf');
+}
+
+html,
+body {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+body {
+    overflow-x: hidden;
+
+}
+
+* {
+    font-family: poppins;
+}
+
+header {
+    background-color: var(--gray2-color);
+    border-radius: var(--rounded-lg);
+    padding: 8px 28px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 58px;
+}
+
+a {
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+ul {
+    list-style: none;
+    margin: 0px !important;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--white-color);
+    padding: 8px 16px;
+    border-radius: var(--rounded-md);
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.search-btn {
+    width: 20px;
+}
+
+.contact-btn {
+    border-radius: var(--rounded-md);
+    padding: 8px 12px;
+    background-color: var(--white-color);
+}
+
+header a {
+    font-size: 14px;
+}
+
+.hero-section {
+    display: flex;
+    background: linear-gradient(to right, #C1DEE8, #FBD9B9);
+    border-radius: var(--rounded-sm);
+    margin-top: 16px;
+    /* height: 400px; */
+}
+
+.hero-img img {
+    width: 100%;
+    height: 110%;
+}
+
+.hero-content h1 {
+    font-family: Poppins-Bold;
+}
+
+.hero-section>div {
+    flex: 1;
+    border-radius: var(--rounded-md);
+}
+
+.hero-sec-inp {
+    background-color: var(--white-color);
+    border-radius: var(--rounded-md);
+    position: relative;
+    margin-top: 12px;
+}
+
+.hero-sec-inp input {
+    border: none !important;
+    outline: none !important;
+    background-color: transparent;
+    padding: 16px 12px;
+    border-radius: var(--rounded-md);
+    width: 65%;
+}
+
+.hero-sec-inp button {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 16px 12px;
+    width: 30%;
+    border-radius: var(--rounded-md);
+    position: absolute;
+    right: 0;
+}
+
+@media only screen and (max-width:768px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 18px;
+        row-gap: 4rem;
+    }
+
+    .hero-content>div {
+        margin-top: 1.5rem;
+        margin-left: 0px !important;
+    }
+
+    nav {
+        display: none ; 
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-section div {
+        width: 100%;
+    }
+}

@@ -1,15 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Add Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="./styles/bootstrap.css" />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-</body>
-
+  <body>
+    <div class="container">
+      <header class="mt-4">
+        <div class="logo">
+          <img src="./assets/images/logo.png" alt="logo" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Agents</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Listings</a></li>
+            <li>
+              <button>
+                <img
+                  src="./assets/icons/search-normal.png"
+                  class="search-btn"
+                  alt="search button"
+                />
+              </button>
+            </li>
+          </ul>
+          <div>
+            <a href="">Other Services</a>
+          </div>
+          <div>
+            <a href="" class="contact-btn">Contact Us</a>
+          </div>
+        </nav>
+        <button class="nav-icon">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </header>
+      <section class="hero-section">
+        <div class="hero-content d-flex align-items-center">
+          <div class="ms-4 ms-lg-5 d-flex flex-column gap-2">
+            <p class="m-0">Welcome to Realstate</p>
+            <h1 lcass="m-0">Manage Your Property</h1>
+            <p>
+              Your will have everything nearby supermarket, buses , station, the
+              carmen neighborhood, etc
+            </p>
+            <div class="hero-sec-inp">
+              <input type="email" placeholder="Enter your Email" />
+              <button>Get a Quote</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="./assets/images/heroImg.png" alt="" />
+        </div>
+      </section>
+    </div>
+    <!-- bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
