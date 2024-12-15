@@ -67,8 +67,9 @@ button {
 
 .contact-btn {
     border-radius: var(--rounded-md);
-    padding: 8px 12px;
+    padding: 8px 16px;
     background-color: var(--white-color);
+    border: 1px solid var(--gray-color);
 }
 
 header a {
@@ -80,7 +81,7 @@ header a {
     background: linear-gradient(to right, #C1DEE8, #FBD9B9);
     border-radius: var(--rounded-sm);
     margin-top: 16px;
-    /* height: 400px; */
+    min-height: 600px;
 }
 
 .hero-img img {
@@ -90,6 +91,11 @@ header a {
 
 .hero-content h1 {
     font-family: Poppins-Bold;
+    font-size: 55px;
+}
+
+.hero-content>div {
+    width: 70% !important;
 }
 
 .hero-section>div {
@@ -117,10 +123,136 @@ header a {
     background-color: var(--black-color);
     color: var(--white-color);
     padding: 16px 12px;
-    width: 30%;
     border-radius: var(--rounded-md);
     position: absolute;
     right: 0;
+}
+
+/* Page-2-row */
+.page-2-row {
+    display: flex;
+    gap: 8%;
+
+}
+
+.page-2-row>.boxes {
+    padding: 8px;
+}
+.boxes img{
+    width: 50px;
+}
+.boxes .heading {
+    font-size: var(--fz-md);
+    font-weight: 600;
+    margin: 12px 0;
+}
+
+/* projects section */
+
+/* about us section */
+.about-us-wrapper {
+    min-height: 400px;
+}
+
+.about-us .head {
+    font-size: var(--fz-md);
+    text-align: center;
+    font-family: poppins-bold;
+}
+
+.about-us-btns button {
+    font-size: var(--fz-sm);
+}
+
+.about-us-btns button:first-child {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 11px 2rem;
+    border-radius: var(--rounded-lg);
+    margin-right: 1rem;
+    box-sizing: border-box;
+}
+
+.about-us-btns button:last-child {
+    box-sizing: border-box;
+    padding: 10px 2rem;
+    border-radius: var(--rounded-lg);
+    border: 1px solid var(--gray-color);
+}
+
+/* subscribe section styling */
+.subscribe-sec {
+    background: linear-gradient(to right, #C1DEE8, #FBD9B9);
+    border-radius: var(--rounded-sm);
+    padding: 8px;
+    display: flex;
+}
+
+.subscribe-sec>div:first-child {
+    width: 60%;
+
+    & .para {
+        font-size: var(--fz-sm);
+        width: 80%;
+    }
+
+    & .head {
+        font-family: poppins-bold;
+    }
+}
+
+.subscribe-sec-content {
+    width: 90%;
+    height: 90%;
+    margin: 4rem 0 0 2rem;
+}
+
+.subscribe-sec>div:nth-child(2) {
+    width: 40%;
+
+    &>img {
+        width: 100%;
+        height: 110%;
+
+    }
+}
+
+.inp-container {
+    width: 60%;
+    background-color: #fff;
+    border-radius: var(--rounded-md);
+    display: flex;
+    height: 40px;
+    margin-top: 2.5rem;
+}
+
+.inp-container input[type="email"] {
+    border: none;
+    outline: none;
+    padding: 4px 16px;
+    font-size: var(--fz-sm);
+    flex: 7;
+    border-radius: var(--rounded-md);
+}
+
+.inp-container button {
+    flex: 3;
+    font-weight: bolder;
+    background: var(--black-color);
+    border-radius: var(--rounded-md);
+    color: #fff;
+    font-size: var(--fz-sm);
+}
+
+@media only screen and (max-width: 992px) {
+    nav {
+        display: none;
+    }
+
+    .page-2-row {
+        flex-direction: column;
+        row-gap: 12px;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -135,17 +267,40 @@ header a {
         margin-left: 0px !important;
     }
 
-    nav {
-        display: none ; 
-    }
-
     .hero-content h1 {
         font-size: 36px;
     }
 
     .hero-section div {
         width: 100%;
-    }.hero-sec-inp button{
+    }
+
+    .hero-sec-inp button {
         width: auto !important;
+    }
+
+    .hero-content>div {
+        width: 100% !important;
+    }
+
+    .projects-cards-container {
+        flex-wrap: wrap;
+    }
+
+    .cards img {
+        width: 100%;
+    }
+
+    .subscribe-sec {
+        flex-wrap: wrap;
+        row-gap: 2rem;
+    }
+
+    .subscribe-sec>div {
+        width: 100% !important;
+    }
+
+    .subscribe-sec :is(.inp-container, .head, .para) {
+        width: 100% !important;
     }
 }
