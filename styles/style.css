@@ -138,9 +138,11 @@ header a {
 .page-2-row>.boxes {
     padding: 8px;
 }
-.boxes img{
+
+.boxes img {
     width: 50px;
 }
+
 .boxes .heading {
     font-size: var(--fz-md);
     font-weight: 600;
@@ -148,6 +150,48 @@ header a {
 }
 
 /* projects section */
+.projects-sec .head {
+    font-size: 32px;
+    font-family: poppins-bold;
+}
+
+
+.projects-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.projects-col {
+    flex: 1;
+    border-radius: var(--rounded-sm);
+    border: 1px solid var(--gray-color);
+    padding-bottom: 2rem;
+}
+
+.projects-col-content {
+    padding: 12px;
+    margin-top: 12px;
+}
+
+.projects-col-content p {
+    font-size: var(--fz-sm);
+    margin-top: 12px;
+}
+
+.projects-col-img {
+    width: 100%;
+    min-height: 200px !important;
+    outline: 2px solid var(--white-color);
+    border-radius: var(--rounded-sm);
+}
+
+.projects-col-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--rounded-sm);
+}
 
 /* about us section */
 .about-us-wrapper {
@@ -253,6 +297,7 @@ header a {
         flex-direction: column;
         row-gap: 12px;
     }
+
 }
 
 @media only screen and (max-width:768px) {
@@ -302,5 +347,10 @@ header a {
 
     .subscribe-sec :is(.inp-container, .head, .para) {
         width: 100% !important;
+    }
+
+    .projects-col {
+        width: 100%;
+        flex: unset;
     }
 }
