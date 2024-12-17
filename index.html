@@ -1,249 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- Add Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="./styles/bootstrap.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Real Estate</title>
-  <link rel="stylesheet" href="./styles/style.css" />
-  <!-- Add Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <!-- Bootstrap CSS-->
-  <link rel="stylesheet" href="./styles/bootstrap.css" />
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-  <!-- AOS CSS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-
-<body>
-  <div class="container d-flex flex-column gap-5">
-    <header class="mt-4">
-      <div class="logo">
-        <img src="./assets/images/logo.png" alt="logo" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="">About us</a></li>
-          <li><a href="">Projects</a></li>
-          <li><a href="">Agents</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Listings</a></li>
-          <li>
-            <button>
-              <img src="./assets/icons/search-normal.png" class="search-btn" alt="search button" />
-            </button>
-          </li>
-        </ul>
-        <div>
-          <a href="">Other Services</a>
+  <body>
+    <div class="container d-flex flex-column gap-5">
+      <header class="mt-4">
+        <div class="logo">
+          <img src="./assets/images/logo.png" alt="logo" />
         </div>
-        <div>
-          <a href="" class="contact-btn">Contact Us</a>
-        </div>
-      </nav>
-      <button class="nav-icon d-lg-none">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-    </header>
-    <section class="hero-section">
-      <div class="hero-content d-flex align-items-center">
-        <div class="ms-4 ms-lg-5 d-flex flex-column gap-2">
-          <p class="m-0">Welcome to Realstate</p>
-          <h1 class="m-0">Manage Your Property</h1>
-          <p>
-            Your will have everything nearby supermarket, buses , station, the
-            carmen neighborhood, etc
-          </p>
-          <div class="hero-sec-inp">
-            <input type="email" placeholder="Enter your Email" />
-            <button>Get a Quote</button>
-          </div>
-        </div>
-      </div>
-      <div class="hero-img">
-        <img src="./assets/images/heroImg.png" alt="house view" />
-      </div>
-    </section>
-    <section class="page-2 mt-5">
-      <div class="text-center">
-        <small>Three steps, Three minutes.</small>
-        <h2>Everything should be easy.</h2>
-      </div>
-      <div class="page-2-row mt-5">
-        <div class="boxes">
-          <img src="./assets/images/messages.png" alt="" />
-          <div class="heading">Answer questions</div>
-          <p class="para">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia,
-            possimus. Lorem ipsum dolor sit.
-          </p>
-        </div>
-        <div class="boxes">
-          <img src="./assets/images/sms-tracking.png" alt="" />
-          <div class="heading">Select a quote</div>
-          <p class="para">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia,
-            possimus. Lorem ipsum dolor sit.
-          </p>
-        </div>
-        <div class="boxes">
-          <img src="./assets/images/edit-2.png" alt="" />
-          <div class="heading">Get registered</div>
-          <p class="para">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia,
-            possimus. Lorem ipsum dolor sit.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="projects-sec">
-      <div>
-        <small class="title">Best Project of the Years</small>
-        <div class="head">Our recent projects</div>
-      </div>
-      <div class="projects-row mt-3 row-gap-3">
-        <div class="projects-col">
-          <div class="">
-            <div class="projects-col-img">
-              <img src="./assets/images/3d-rendering-house-model (1) 1.png" alt="" />
-            </div>
-            <div class="projects-col-content">
-              <strong>Sobha Hearland Villas</strong>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur amet vel tenetur.
-              </p>
-              <div class="ranking-box d-flex align-items-center gap-2">
-                <div class="rank-stars">
-                  <img src="./assets/images/fillStar.svg" alt="" />
-                  <img src="./assets/images/fillStar.svg" alt="" />
-                  <img src="./assets/images/fillStar.svg" alt="" />
-                  <img src="./assets/images/fillStar.svg" alt="" />
-                  <img src="./assets/images/blankStar.svg" alt="" />
-                </div>
-                <small class="rank-no">4.83</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="projects-col">
-          <div class="">
-            <div class="projects-col-img">
-              <img src="./assets/images/3d-rendering-house-model (3) 1.png" alt="" />
-            </div>
-            <div class="projects-col-content">
-              <strong>Sobha Hearland Villas</strong>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur amet vel tenetur.
-              </p>
-              <div class="ranking-box d-flex align-items-center gap-2">
-                <div class="rank-stars">
-                  <img src="./assets/images/fillStar.svg" alt="" />
-                  <img src="./assets/images/fillStar.svg" alt="" />
-                  <img src="./assets/images/fillStar.svg" alt="" />
-                  <img src="./assets/images/fillStar.svg" alt="" />
-                  <img src="./assets/images/blankStar.svg" alt="" />
-                </div>
-                <small class="rank-no">4.83</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="projects-col">
-          <div class="">
-            <div class="projects-col-img">
-              <img src="./assets/images/3d-view-house-model 1.png" alt="" />
-            </div>
-            <div class="projects-col-content">
-              <strong>Sobha Hearland Villas</strong>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Consequatur amet vel tenetur.
-              </p>
-              <div class="ranking-box d-flex align-items-center gap-2">
-                <div class="rank-stars">
-                  <img src="./assets/images/fillStar.svg" alt="" />
-                  <img src="./assets/images/fillStar.svg" alt="" />
-                  <img src="./assets/images/fillStar.svg" alt="" />
-                  <img src="./assets/images/fillStar.svg" alt="" />
-                  <img src="./assets/images/blankStar.svg" alt="" />
-                </div>
-                <small class="rank-no">4.83</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="about-us">
-      <div class="head">
-        We're a global, boutique real <br />
-        estate brokerage
-      </div>
-      <div class="d-flex gap-5 mt-5 about-us-wrapper flex-column-reverse flex-md-row">
-        <div class="about-us-content w-50 w-100 d-flex align-items-center">
+        <nav>
+          <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Agents</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Listings</a></li>
+            <li>
+              <button>
+                <img
+                  src="./assets/icons/search-normal.png"
+                  class="search-btn"
+                  alt="search button"
+                />
+              </button>
+            </li>
+          </ul>
           <div>
-            <h3 class="fw-bold fs-3 mb-2">The transfer of real state</h3>
+            <a href="">Other Services</a>
+          </div>
+          <div>
+            <a href="" class="contact-btn">Contact Us</a>
+          </div>
+        </nav>
+        <button class="nav-icon d-lg-none">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </header>
+      <section class="hero-section">
+        <div class="hero-content d-flex align-items-center">
+          <div class="ms-4 ms-lg-5 d-flex flex-column gap-2">
+            <p class="m-0">Welcome to Realstate</p>
+            <h1 class="m-0">Manage Your Property</h1>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
-              inventore cumque, dolor fugiat ea, placeat eligendi sapiente
-              voluptate molestias excepturi temporibus suscipit ratione
-              doloremque expedita est dolorem numquam cum explicabo.
+              Your will have everything nearby supermarket, buses , station, the
+              carmen neighborhood, etc
             </p>
-            <div class="about-us-btns text-center text-md-start mt-3">
-              <button>Book Now!</button>
-              <button>Read More</button>
+            <div class="hero-sec-inp">
+              <input type="email" placeholder="Enter your Email" />
+              <button>Get a Quote</button>
             </div>
-            <div class="row mt-5">
-              <div class="col-4 d-flex flex-column justify-content-center align-items-center align-items-md-start">
-                <div class="fs-1 fw-bold">12+</div>
-                <div>Customers</div>
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="./assets/images/heroImg.png" alt="house view" />
+        </div>
+      </section>
+      <section class="page-2 mt-5">
+        <div class="text-center">
+          <small class="title">Three steps, Three minutes.</small>
+          <h2 class="head">Everything should be easy.</h2>
+        </div>
+        <div class="page-2-row mt-5">
+          <div class="boxes">
+            <img src="./assets/images/messages.png" alt="" />
+            <div class="heading">Answer questions</div>
+            <p class="para">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia,
+              possimus. Lorem ipsum dolor sit.
+            </p>
+          </div>
+          <div class="boxes">
+            <img src="./assets/images/sms-tracking.png" alt="" />
+            <div class="heading">Select a quote</div>
+            <p class="para">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia,
+              possimus. Lorem ipsum dolor sit.
+            </p>
+          </div>
+          <div class="boxes">
+            <img src="./assets/images/edit-2.png" alt="" />
+            <div class="heading">Get registered</div>
+            <p class="para">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia,
+              possimus. Lorem ipsum dolor sit.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="projects-sec">
+        <div>
+          <small class="title">Best Project of the Years</small>
+          <div class="head">Our recent projects</div>
+        </div>
+        <div class="projects-row mt-3 row-gap-3">
+          <div class="projects-col">
+            <div class="">
+              <div class="projects-col-img">
+                <img
+                  src="./assets/images/3d-rendering-house-model (1) 1.png"
+                  alt=""
+                />
               </div>
-              <div class="col-4 d-flex flex-column justify-content-center">
-                <div class="fs-1 fw-bold">14+</div>
-                <div>Offices</div>
+              <div class="projects-col-content">
+                <strong>Sobha Hearland Villas</strong>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur amet vel tenetur.
+                </p>
+                <div class="ranking-box d-flex align-items-center gap-2">
+                  <div class="rank-stars">
+                    <img src="./assets/images/fillStar.svg" alt="" />
+                    <img src="./assets/images/fillStar.svg" alt="" />
+                    <img src="./assets/images/fillStar.svg" alt="" />
+                    <img src="./assets/images/fillStar.svg" alt="" />
+                    <img src="./assets/images/blankStar.svg" alt="" />
+                  </div>
+                  <small class="rank-no">4.83</small>
+                </div>
               </div>
-              <div class="col-4 d-flex flex-column justify-content-center">
-                <div class="fs-1 fw-bold">10+</div>
-                <div>Students</div>
+            </div>
+          </div>
+          <div class="projects-col">
+            <div class="">
+              <div class="projects-col-img">
+                <img
+                  src="./assets/images/3d-rendering-house-model (3) 1.png"
+                  alt=""
+                />
+              </div>
+              <div class="projects-col-content">
+                <strong>Sobha Hearland Villas</strong>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur amet vel tenetur.
+                </p>
+                <div class="ranking-box d-flex align-items-center gap-2">
+                  <div class="rank-stars">
+                    <img src="./assets/images/fillStar.svg" alt="" />
+                    <img src="./assets/images/fillStar.svg" alt="" />
+                    <img src="./assets/images/fillStar.svg" alt="" />
+                    <img src="./assets/images/fillStar.svg" alt="" />
+                    <img src="./assets/images/blankStar.svg" alt="" />
+                  </div>
+                  <small class="rank-no">4.83</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="projects-col">
+            <div class="">
+              <div class="projects-col-img">
+                <img src="./assets/images/3d-view-house-model 1.png" alt="" />
+              </div>
+              <div class="projects-col-content">
+                <strong>Sobha Hearland Villas</strong>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur amet vel tenetur.
+                </p>
+                <div class="ranking-box d-flex align-items-center gap-2">
+                  <div class="rank-stars">
+                    <img src="./assets/images/fillStar.svg" alt="" />
+                    <img src="./assets/images/fillStar.svg" alt="" />
+                    <img src="./assets/images/fillStar.svg" alt="" />
+                    <img src="./assets/images/fillStar.svg" alt="" />
+                    <img src="./assets/images/blankStar.svg" alt="" />
+                  </div>
+                  <small class="rank-no">4.83</small>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="about-us-img w-50 w-100 rounded-5 overflow-hidden">
-          <img class="w-100 h-100"
-            src="./assets/images/happy-blonde-female-manager-has-conversation-with-male-colleague.jpg" alt="" />
+      </section>
+      <section class="about-us">
+        <div class="head">
+          We're a global, boutique real <br />
+          estate brokerage
         </div>
-      </div>
-    </section>
-
-    <section class="subscribe-sec">
-      <div>
-        <div class="subscribe-sec-content">
-          <h1 class="head">Subscribe Our Newsletter</h1>
-          <p class="para">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Excepturi odit saepe magnam, optio possimus labore. Id, fugiat!
-            Porro, obcaecati. Nulla libero mollitia repellat ipsum voluptatum
-            animi repudiandae explicabo error architecto.
-          </p>
-          <div class="inp-container">
-            <input type="email" placeholder="Enter your email" name="" id="" />
-            <button type="submit">Get a quote</button>
+        <div
+          class="d-flex gap-5 mt-5 about-us-wrapper flex-column-reverse flex-md-row"
+        >
+          <div class="about-us-content w-50 w-100 d-flex align-items-center">
+            <div>
+              <h3 class="fw-bold fs-3 mb-2">The transfer of real state</h3>
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt
+                inventore cumque, dolor fugiat ea, placeat eligendi sapiente
+                voluptate molestias excepturi temporibus suscipit ratione
+                doloremque expedita est dolorem numquam cum explicabo.
+              </p>
+              <div class="about-us-btns text-center text-md-start mt-3">
+                <button>Book Now!</button>
+                <button>Read More</button>
+              </div>
+              <div class="row mt-5">
+                <div
+                  class="col-4 d-flex flex-column justify-content-center align-items-center align-items-md-start"
+                >
+                  <div class="fs-1 fw-bold">12+</div>
+                  <div>Customers</div>
+                </div>
+                <div class="col-4 d-flex flex-column justify-content-center">
+                  <div class="fs-1 fw-bold">14+</div>
+                  <div>Offices</div>
+                </div>
+                <div class="col-4 d-flex flex-column justify-content-center">
+                  <div class="fs-1 fw-bold">10+</div>
+                  <div>Students</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-us-img w-50 w-100 rounded-5 overflow-hidden">
+            <img
+              class="w-100 h-100"
+              src="./assets/images/happy-blonde-female-manager-has-conversation-with-male-colleague.jpg"
+              alt=""
+            />
           </div>
         </div>
-      </div>
-      <div>
-        <img src="./assets/images/3d-rendering-isometric-fdgdf 1.png" alt="" />
-      </div>
-    </section>
-  </div>
-  <!-- bootstrap JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      </section>
 
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</body>
+      <section class="subscribe-sec">
+        <div>
+          <div class="subscribe-sec-content">
+            <h1 class="head">Subscribe Our Newsletter</h1>
+            <p class="para">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Excepturi odit saepe magnam, optio possimus labore. Id, fugiat!
+              Porro, obcaecati. Nulla libero mollitia repellat ipsum voluptatum
+              animi repudiandae explicabo error architecto.
+            </p>
+            <div class="inp-container">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                name=""
+                id=""
+              />
+              <button type="submit">Get a quote</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="./assets/images/3d-rendering-isometric-fdgdf 1.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </div>
+    <!-- bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
 </html>
